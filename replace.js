@@ -7,9 +7,9 @@ function format(origin, replacement) {
 }
 
 var map = new Map();
-map.set("caillou", "objectif");
 map.set("cailloux", "objectifs");
 map.set("caillous", "objectifs");
+map.set("caillou", "objectif");
 
 var keys = Array.from(map.keys())
 var re = new RegExp(keys.join("|"), "gi");
